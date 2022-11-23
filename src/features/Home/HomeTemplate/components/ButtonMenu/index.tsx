@@ -4,8 +4,17 @@ import { ButtonContainer } from './styles';
 type Props = {
   text: string;
   important: boolean;
+  onClick: () => void;
 };
 
-export const ButtonMenu = ({ text, important }: Props) => {
-  return <ButtonContainer important={important}> {text}</ButtonContainer>;
+export const ButtonMenu = ({ text, important, onClick }: Props) => {
+  return (
+    <ButtonContainer
+      onClick={onClick}
+      important={important}
+    >
+      {' '}
+      {text}
+    </ButtonContainer>
+  );
 };

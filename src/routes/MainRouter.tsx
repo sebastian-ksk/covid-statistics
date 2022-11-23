@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { HomeTemplate } from '../features/Home/HomeTemplate';
+import { CountriesPage } from '../pages/CountriesPage/index';
 
 export const MainRouter = () => {
   return (
@@ -8,6 +9,10 @@ export const MainRouter = () => {
       <Route
         path='/'
         element={<HomeTemplate />}
+      />
+      <Route
+        path='/countries'
+        element={<CountriesPage />}
       />
     </Routes>
   );
