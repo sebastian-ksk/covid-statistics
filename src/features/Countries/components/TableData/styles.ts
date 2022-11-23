@@ -6,7 +6,6 @@ export const MainContainer = styled.div`
   padding: 4px 4px;
   overflow-y: auto;
   border-radius: 10px;
-
   box-shadow: -53px 46px 82px -21px rgba(0, 0, 0, 0.1);
 `;
 
