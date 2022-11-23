@@ -1,8 +1,6 @@
 import React from 'react';
-import { Navbar, NavbarText } from 'reactstrap';
 import { BodyContainer, HeaderContainer, MainContainer } from './styles';
-
-import { CiUser, CiLogout } from 'react-icons/ci';
+import { CiLogout } from 'react-icons/ci';
 
 type Props = {
   children?: JSX.Element[] | JSX.Element | string;
