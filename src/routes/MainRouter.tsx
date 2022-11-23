@@ -1,12 +1,13 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { HomeTemplate } from '../features/Home/HomeTemplate';
 
 export const MainRouter = () => {
   return (
     <Routes>
       <Route
-        path='/*'
-        element={<div>hola</div>}
+        path='/'
+        element={<HomeTemplate />}
       />
     </Routes>
   );
