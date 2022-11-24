@@ -51,22 +51,3 @@ export const PlusNumber = styled.div`
   margin: auto;
   background-color: ${({ theme }) => theme.colors.red};
 `;
-
-export const CardNameCountrie = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 99%;
-  height: 90%;
-  border-radius: 5px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  position: relative;
-  :hover {
-    outline: none !important;
-    border-color: 2px solid #719ece;
-    box-shadow: 0 0 10px #719ece;
-  }
-  :active {
-    transform: translateY(-4px);
-  }
-`;
