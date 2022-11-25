@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import {
   CardContainer,
   ColumnInfo,
@@ -9,6 +10,15 @@ import {
 } from './styles';
 
 export const GeneralDataCard = () => {
+  const {
+    totalConfirmed,
+    lastConfirmed,
+    totalDeath,
+    lastDeath,
+    totalRecovered,
+    lastRecovered,
+  } = useSelector((state: any) => state.home);
+
   return (
     <CardContainer>
       <TitlesContainer>
@@ -24,16 +34,22 @@ export const GeneralDataCard = () => {
           </tr>
           <tr>
             <ColumnInfo last={false}>
-              354.956.437
-              <PlusNumber>+5.2845</PlusNumber>
+              {new Intl.NumberFormat('es-MX').format(totalConfirmed)}
+              <PlusNumber>
+                + {new Intl.NumberFormat('es-MX').format(lastConfirmed)}
+              </PlusNumber>
             </ColumnInfo>
             <ColumnInfo last={false}>
-              354.956.437
-              <PlusNumber>+5.2845</PlusNumber>
+              {new Intl.NumberFormat('es-MX').format(totalDeath)}
+              <PlusNumber>
+                + {new Intl.NumberFormat('es-MX').format(lastDeath)}
+              </PlusNumber>
             </ColumnInfo>
             <ColumnInfo last={true}>
-              354.956.437
-              <PlusNumber>+5.2845</PlusNumber>
+              {new Intl.NumberFormat('es-MX').format(totalRecovered)}
+              <PlusNumber>
+                + {new Intl.NumberFormat('es-MX').format(lastRecovered)}
+              </PlusNumber>
             </ColumnInfo>
           </tr>
         </TablePresentation>

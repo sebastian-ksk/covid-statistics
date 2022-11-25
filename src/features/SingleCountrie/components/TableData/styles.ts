@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.div`
   width: 100%;
-  height: 95%;
+  height: 80vh;
   padding: 4px 4px;
-  overflow-y: auto;
+  overflow-y: scroll;
   border-radius: 10px;
   box-shadow: -53px 46px 82px -21px rgba(0, 0, 0, 0.1);
 `;

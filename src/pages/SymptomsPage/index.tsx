@@ -1,5 +1,6 @@
 import React from 'react';
+import { SymptomsTemplate } from '../../features/Symptoms/SymptomsTemplate';
 
 export const SymptomsPage = () => {
-  return <div>SymptomsPage</div>;
+  return <SymptomsTemplate />;
 };
