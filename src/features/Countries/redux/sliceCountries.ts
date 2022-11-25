@@ -13,7 +13,6 @@ export const countriesSlice = createSlice({
     },
     dataAllcountries: (state, { payload }) => {
       const { data } = payload;
-
       state.dataCountries = data;
     },
   },

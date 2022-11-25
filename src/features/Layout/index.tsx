@@ -1,6 +1,6 @@
 import React from 'react';
 import { BodyContainer, HeaderContainer, MainContainer } from './styles';
-import { CiLogout } from 'react-icons/ci';
+import { CiHome } from 'react-icons/ci';
 import { useNavigate } from 'react-router-dom';
 
 type Props = {
@@ -11,12 +11,13 @@ export const Layout = ({ children }: Props) => {
   return (
     <MainContainer>
       <HeaderContainer>
-        <CiLogout
+        <CiHome
           size={20}
           color={'red'}
           className='IconStyle'
           onClick={() => navigate('/')}
         />
+        Home
       </HeaderContainer>
       <BodyContainer>{children}</BodyContainer>
     </MainContainer>

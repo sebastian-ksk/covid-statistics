@@ -18,7 +18,8 @@ export const MainContainer = styled.div`
 
 export const HeaderContainer = styled.div`
   width: 100%;
-  min-height: 25px;
+  color: black;
+  min-height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: start;

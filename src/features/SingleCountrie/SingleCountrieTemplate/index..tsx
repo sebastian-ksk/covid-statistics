@@ -6,7 +6,7 @@ import { TableData } from '../components/TableData';
 import { MainContainer, TableContainer, TitleContainer } from './styles';
 
 export const SingleCountrieTemplate = () => {
-  const { country, registers } = useSelector((state: any) => state.singCountry);
+  const { country } = useSelector((state: any) => state.singCountry);
   return (
     <Layout>
       <MainContainer>

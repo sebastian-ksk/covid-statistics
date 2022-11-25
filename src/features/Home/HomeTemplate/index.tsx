@@ -4,7 +4,7 @@ import { Layout } from '../../Layout/index';
 import { useHome } from '../../../hooks/useHome';
 import { ButtonMenu } from '../components/ButtonMenu';
 import { GeneralDataCard } from '../components/GeneralDataCard';
-import { HomeContainer, MenuContainer } from './styles';
+import { CardPresentation, HomeContainer, MenuContainer } from './styles';
 
 export const HomeTemplate = () => {
   const navigate = useNavigate();
@@ -43,6 +43,15 @@ export const HomeTemplate = () => {
           />
         </MenuContainer>
       </HomeContainer>
+      <CardPresentation>
+        Juan Sebastian Castellanos
+        <br />
+        email: castellanospsebastian@gmail.com
+        <br />
+        phone: (+57) 3134863396
+        <br />
+        <a href=' https://github.com/sebastian-ksk'> GitHub</a>
+      </CardPresentation>
     </Layout>
   );
 };
